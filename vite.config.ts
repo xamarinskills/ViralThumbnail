@@ -6,7 +6,9 @@ export default defineConfig(({ mode }) => {
   // Load env vars from .env, .env.local, .env.[mode], .env.[mode].local
   const env = loadEnv(mode, process.cwd(), '');
   return {
-    base: '/ViralThumb-AI/pages/',
+    // Use a relative base so production builds work regardless of repo/name path
+    // (prevents absolute paths like `/ViralThumb-AI/...` which cause 404s on GitHub Pages)
+    base: './',
     server: {
       port: 3000,
       host: '0.0.0.0',
