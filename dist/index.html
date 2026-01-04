@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ViralThumb AI - Create Viral YouTube Thumbnails</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -22,53 +21,8 @@
       } catch (_) {}
     })();
   </script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            primary: '#8c25f4',
-            'primary-hover': '#7a1bd6',
-            background: '#0a0a0c',
-            surface: '#121216',
-            'surface-light': '#1e1e24',
-            border: '#2a2a32',
-            text: {
-              primary: '#ffffff',
-              secondary: '#ab9cba',
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Space Grotesk', 'sans-serif'],
-          },
-          boxShadow: {
-            'neon': '0 0 20px rgba(140, 37, 244, 0.4)',
-            'neon-strong': '0 0 30px rgba(140, 37, 244, 0.6)',
-          },
-          animation: {
-            'fade-in': 'fadeIn 0.5s ease-out forwards',
-            'shake': 'shake 0.4s ease-in-out',
-          },
-          keyframes: {
-            fadeIn: {
-              '0%': { opacity: '0', transform: 'translateY(10px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            },
-            shake: {
-              '0%, 100%': { transform: 'translateX(0)' },
-              '25%': { transform: 'translateX(-5px)' },
-              '75%': { transform: 'translateX(5px)' },
-            },
-            shimmer: {
-              '100%': { transform: 'translateX(100%)' },
-            }
-          }
-        }
-      }
-    }
-  </script>
+  <!-- Tailwind is built from source (PostCSS) in development/production. -->
+  <!-- To run locally: `npm install` then `npm run dev`. -->
   <style>
     /* Theme CSS Variables
        --bg-background: Page background surface
@@ -122,6 +76,7 @@
     .border-white\/10 { border-color: var(--border-color) !important; }
     .bg-white\/5 { background-color: color-mix(in oklab, var(--bg-surface) 95%, transparent) !important; }
     .bg-white\/10 { background-color: color-mix(in oklab, var(--bg-surface) 90%, transparent) !important; }
+    .placeholder\:text-white\/20::-moz-placeholder { color: var(--placeholder) !important; }
     .placeholder\:text-white\/20::placeholder { color: var(--placeholder) !important; }
     .text-white\/10 { color: var(--text-primary-10) !important; }
     .text-white\/20 { color: var(--text-primary-20) !important; }
@@ -185,7 +140,8 @@
     /* Light theme overrides for token classes */
     html.light .text-primary { color: #8c25f4 !important; }
   </style>
-  <script type="module" crossorigin src="/ViralThumb-AI/pages/assets/index-DbkwpWP9.js"></script>
+  <script type="module" crossorigin src="/ViralThumb-AI/pages/assets/index-Rq1cRhFk.js"></script>
+  <link rel="stylesheet" crossorigin href="/ViralThumb-AI/pages/assets/index-E42LbjyO.css">
 </head>
 <body class="custom-scrollbar">
   <div id="root"></div>
